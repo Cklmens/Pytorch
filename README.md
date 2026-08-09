@@ -21,7 +21,7 @@ The project includes experiments for:
 
 Consider a semilinear PDE of the general form
 
-$$
+```math
 \partial_t u(t,x)
 + \mu(t,x)\cdot\nabla_x u(t,x)
 + \frac{1}{2}\operatorname{Tr}
@@ -30,7 +30,7 @@ $$
 \right)
 + f\left(t,x,u,\sigma^\top\nabla_xu\right)
 =0
-$$
+```
 
 with terminal condition
 
