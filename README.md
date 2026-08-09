@@ -22,11 +22,10 @@ The project includes experiments for:
 Consider a semilinear PDE of the general form
 
 $$
-\partial_t u(t,x)
-+ \mu(t,x)\cdot\nabla_x u(t,x)
-+ \frac12 \operatorname{Tr}
-\left(\sigma\sigma^\top(t,x)D_x^2u(t,x)\right)
-+ f(t,x,u,\sigma^\top\nabla_xu)=0.
+
+\partial_t u(t,x) + \mu(t,x)\cdot\nabla_x u(t,x)+ \frac12 \operatorname{Tr}
+\left(\sigma\sigma^\top(t,x)D_x^2u(t,x)\right)+ f(t,x,u,\sigma^\top\nabla_xu)=0
+  
 $$
 
 with terminal condition
@@ -39,10 +38,7 @@ The associated forward SDE is simulated using the Euler–Maruyama scheme:
 
 $$
 
-X_{n+1}
-=
-X_n+\mu(t_n,X_n)\Delta t
-+\sigma(t_n,X_n)\Delta W_n.
+X_{n+1}= X_n+\mu(t_n,X_n)\Delta t+\sigma(t_n,X_n)\Delta W_n.
 
 $$
 
@@ -60,10 +56,7 @@ The default loss is the mean squared error:
 
 $$
 
-\mathcal L =
-\mathbb E\left[
-|Y_N-g(X_N)|^2
-\right].
+\mathcal L = \mathbb E\left[|Y_N-g(X_N)|^2\right].
 
 $$
 
