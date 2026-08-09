@@ -22,10 +22,14 @@ The project includes experiments for:
 Consider a semilinear PDE of the general form
 
 $$
-
-\partial_t u(t,x) + \mu(t,x)\cdot\nabla_x u(t,x)+ \frac12 \operatorname{Tr}
-\left(\sigma\sigma^\top(t,x)D_x^2u(t,x)\right)+ f(t,x,u,\sigma^\top\nabla_xu)=0
-  
+\partial_t u(t,x)
++ \mu(t,x)\cdot\nabla_x u(t,x)
++ \frac{1}{2}\operatorname{Tr}
+\left(
+\sigma\sigma^\top(t,x)D_x^2u(t,x)
+\right)
++ f\left(t,x,u,\sigma^\top\nabla_xu\right)
+=0
 $$
 
 with terminal condition
