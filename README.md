@@ -26,7 +26,7 @@ $$
 + \mu(t,x)\cdot\nabla_x u(t,x)
 + \frac12 \operatorname{Tr}
 \left(\sigma\sigma^\top(t,x)D_x^2u(t,x)\right)
-+ f(t,x,u,\sigma^\top\nabla_xu)=0,
++ f(t,x,u,\sigma^\top\nabla_xu)=0.
 $$
 
 with terminal condition
